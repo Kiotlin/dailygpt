@@ -1,8 +1,9 @@
 import "./App.css";
+import ToolNavBar from "./components/ToolNav";
 
 function App() {
   return <>
-    <h1>Hello World!</h1>
+    <ToolNavBar />
   </>;
 }
 
