@@ -1,0 +1,34 @@
+{
+  "category": [
+    {
+      "value": "All Category",
+      "display": true
+    },
+    {
+      "value": "Translation",
+      "display": true
+    },
+    {
+      "value": "Code",
+      "display": true
+    }
+  ],
+  "app": [
+    {
+      "key": "translation",
+      "name": "Translator & Polisher",
+      "description": "You private perfessional translating assistant and expression polisher as the same time.",
+      "category": "Translation",
+      "icon": "CubeTransparentIcon",
+      "color": "red"
+    },
+    {
+      "key": "react_assistant",
+      "name": "React Assistant",
+      "description": "An assistant that can help you addressing any issue related to React Framework.",
+      "category": "Code",
+      "icon": "CommandLineIcon",
+      "color": "black"
+    }
+  ]
+}
