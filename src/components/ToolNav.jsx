@@ -1,6 +1,6 @@
-import SearchBox from "./elements/SearchBox";
-import DropDown from "./elements/DropDown";
-import AppCard from "./cards/AppCard";
+import SearchBox from "./Base/SearchBox";
+import DropDown from "./Base/DropDown";
+import { AppCard } from "./Card";
 import { useState } from "react";
 
 export default function ToolNavBar({ appData }) {
