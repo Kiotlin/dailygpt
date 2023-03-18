@@ -15,9 +15,12 @@
   ],
   "app": [
     {
-      "key": "translation",
       "name": "Translator & Polisher",
       "description": "You private perfessional translating assistant and expression polisher as the same time.",
+      "settings": {
+        "folder": "translation",
+        "function": "Translation"
+      },
       "category": "Translation",
       "icon": "CubeTransparentIcon",
       "color": "red"
@@ -26,6 +29,10 @@
       "key": "react_assistant",
       "name": "React Assistant",
       "description": "An assistant that can help you addressing any issue related to React Framework.",
+      "settings": {
+        "folder": "react_assistant",
+        "function": "ReactAssistant"
+      },
       "category": "Code",
       "icon": "CommandLineIcon",
       "color": "black"
