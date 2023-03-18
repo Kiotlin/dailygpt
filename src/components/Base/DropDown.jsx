@@ -5,21 +5,14 @@ const classNames = (...classes) => {
   return classes.filter(Boolean).join(" ");
 };
 
-const DropDown = ({
-  option = [
-    {
-      value: "All Category",
-      display: true,
-    },
-  ],
-  selectedOption,
-  setSelectedOption,
-}) => {
+const DropDown = (props) => {
+  const { option, value, onChange } = props;
+
   return (
-    <Listbox as="div" value={selectedOption} onChange={setSelectedOption}>
+    <Listbox as="div" value={value} onChange={onChange}>
       <div className="relative">
         <Listbox.Button className="flex w-full cursor-default items-center rounded border border-gray-200 bg-white py-2 pl-3 pr-10 text-left text-sm text-gray-500 shadow-sm focus:border-green-600 focus:outline-none dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-green-300 sm:text-sm sm:leading-6">
-          <span className="block truncate text-sm">{selectedOption.value}</span>
+          <span className="block truncate text-sm">{value.value}</span>
           <span className="pointer-events-none absolute inset-y-0 right-0 ml-3 flex items-center pr-2">
             <ChevronUpDownIcon
               className="h-5 w-5 text-gray-400"

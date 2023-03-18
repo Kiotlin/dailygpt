@@ -20,17 +20,17 @@ export default function ToolNavBar({ appData }) {
             <div className="grow basis-1/6">
               <DropDown
                 option={options}
-                selectedOption={category}
-                setSelectedOption={setCategory}
+                value={category}
+                onChange={setCategory}
               />
             </div>
           </div>
           <div className="mx-2 my-2">
             {category.value == "All Category"
-              ? apps.map((item) => <AppCard key={item.key} app={item} />)
+              ? apps.map((item, _) => <AppCard key={_} app={item} />)
               : apps
                   .filter((i) => i.category == category.value)
-                  .map((item) => <AppCard key={item.key} app={item} />)}
+                  .map((item, _) => <AppCard key={_} app={item} />)}
           </div>
         </div>
       </div>
