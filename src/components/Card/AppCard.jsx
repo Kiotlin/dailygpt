@@ -1,4 +1,5 @@
 import * as HIcons from "@heroicons/react/24/outline";
+import { Link } from "react-router-dom";
 
 export default function AppCard({ app, ...props }) {
   const { ...icons } = HIcons;
@@ -16,9 +17,9 @@ export default function AppCard({ app, ...props }) {
   };
 
   return (
-    <article
-      role="button"
-      className="group flex items-center space-x-6 p-3"
+    <Link
+      to={`/${app.settings.folder}`}
+      className="group flex items-center space-x-6 p-3 text-black dark:text-white"
       {...props}
     >
       <div className={`w-14 rounded-sm p-3.5 ${colorVariants[app.color]}`}>
@@ -27,13 +28,13 @@ export default function AppCard({ app, ...props }) {
         </div>
       </div>
       <div className="flex w-full flex-col text-start">
-        <span className="text-base font-medium group-hover:text-gray-700/80">
+        <span className="text-base font-medium group-hover:text-gray-700/80 dark:group-hover:text-gray-200/80">
           {app.name}
         </span>
         <div className="text-xs text-gray-600">
           <span>{app.description}</span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
