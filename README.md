@@ -1,2 +1,2 @@
 # dailygpt
-A tools box implemented with NLP model ChatGPT.
+A tools box implemented with several modern AI models.
